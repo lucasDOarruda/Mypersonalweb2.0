@@ -49,18 +49,3 @@ scrollToTopBtn.addEventListener('click', () => {
 
 
 
-// Get the flowthing element and the close button
-var flowthing = document.getElementById('flowthing');
-var closeBtn = document.querySelector('.close-btn');
-
-// Add click event listener to the flowthing to show the popup
-flowthing.addEventListener('click', function(event) {
-  event.preventDefault();
-  document.getElementById('myPopup').style.display = 'block';
-});
-
-// Add click event listener to the close button to hide the popup
-closeBtn.addEventListener('click', function(event) {
-  event.preventDefault();
-  document.getElementById('myPopup').style.display = 'none';
-});
