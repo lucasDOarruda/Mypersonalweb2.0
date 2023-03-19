@@ -392,11 +392,14 @@ a {
 }
 
 .close-button {
-  background-color: white;
-  color: black;
+  box-shadow: rgba(255, 255, 255, 0.511) 0px 22px 70px 4px;
+  color: rgb(241, 235, 235);
   border: none;
-  padding: 5px 10px;
-  margin-top: 10px;
+  margin-left: 30%;
+  margin-bottom:100%;
+  width: 40%;
+  border-radius: 1%;
+  border-bottom-style: groove;
 }
 
 .icon-button {
@@ -495,9 +498,10 @@ a {
 
 /* Style the slider container */
 .slider-container {
-  width: 80%;
+  width: 85%;
   height: 60%;
-  display: grid;
+  display: fixed;
+  
 }
 
 /* Style the slider slides main source to centralize the images inside op popup  */
@@ -508,7 +512,7 @@ a {
   width: 50%;
   height: 100%;
   margin-right: 50%;
-  box-shadow: rgba(235, 228, 228, 0.517) 0px 22px 70px 4px;
+  box-shadow: rgba(37, 36, 36, 0.517) 0px 22px 70px 4px;
 }
 
 .swiper-slide img {
