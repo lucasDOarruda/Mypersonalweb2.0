@@ -1,15 +1,62 @@
 /* Global styles */
-* {
-  box-sizing: border-box;
+html{
+  background-color: #fec3c3b3;
+  filter:blur(50%);
 }
+
+* {
+   
+  box-sizing: border-box;
+  text-align: center;
+  border-radius: 15px;
+  margin-top: 0px;
+  margin-bottom: 50px;
+
+  
+  
+  
+}
+
+button{
+  background-color: #ffffff39;
+  box-shadow: #e1e3e5;
+  
+  border-top-color: #e1e3e5;
+ 
+}
+ 
+ 
+.night-mode {
+    border-style: ridge;
+    background-color: rgb(7, 7, 7);
+    color: #1d1b1ba6;
+    /* add any additional styles for night mode here */
+   
+  }
+  
 
 body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
-  line-height: 1.5;
-}
-
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    line-height: 1.5;
+    outline-style: groove;
+    border-style: double;
+  }
+  
+  section {
+    outline-style: groove;
+    border-style: double;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 15%;
+    
+    
+    
+  }
+  
+  
+  
 h1,
 h2,
 h3,
@@ -19,7 +66,10 @@ h6 {
   margin-top: 0;
   margin-bottom: 0.5rem;
   font-weight: bold;
+  
 }
+
+
 
 p {
   margin-top: 0;
@@ -37,46 +87,245 @@ a {
   text-decoration: none;
 }
 
-#intro,h1 {
-  text-align: center;
+#intro{
+  box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
+  
+  width: 100%;
   padding: 4rem 1rem;
-  background-color: blueviolet;
-  bac
+  background-color: rgba(167, 9, 253, 0.272);
+  color: rgb(255, 255, 255);
+  border-width: 100%;
+  border-style: dotted;
+
+  
+  animation: FadeIn 3s ease-in-out forwards;
 }
 
+@keyframes FadeIn {
+  0%   { opacity: 0%; }
+  100% { opacity: 100%; }
+    
+    
+}
+/* code above uses to fade blocks in and out : ( animation: FadeIn 3s ease-in-out forwards;
+} 
+
+@keyframes FadeIn {
+  0%   { opacity: 0%; }
+  100% { opacity: 50%; }
+ ) */
+
+
+
 #intro img {
-    width: 90px; /* adjust as needed */
-    height: auto;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    width: 30%;
+    align-content: center;
+    /* adjust as needed */
+    height: 150%;
     margin-right: 20px;
+    
     border-radius: 100%;
+    
+    
+    padding: 0.5rem;
+    animation: FadeIn 5s ease-in-out forwards;
+}
+
+@keyframes FadeIn {
+  0%   { opacity: 0%; }
+  100% { opacity: 100%; }
+    
     
   }
 
-#work-experience,
-#education,
-#skills,
+  /*typo Effect inside of H1 in intro Hi */
+
+
+  #intro  {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: 0.1em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: typing 3.5s steps(40, end), blink-caret 1s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 30% }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor blinking effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }
+  
+
+
+
+  .typing-heading {
+    overflow: hidden;
+    border-right: none;
+    white-space: nowrap;
+    animation: typing 0.7s steps(10, end) forwards;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 50%;
+    }
+    to {
+      width: 100%;
+    }
+  }
+
+  
+  .typewriter-p {
+    
+    display: inline-block;
+    border-right: 0.1em solid #333;
+    padding-right: 5px;
+    animation: typing 3.5s steps(40, end), blink-caret 1s step-end infinite;
+}
+@keyframes typing-p {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+#work-experience  {
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    color: black;
+    background-color: rgb(251, 255, 8);
+    border-width: 100%;
+    border-style: dotted;
+    
+    padding: 2rem 1rem;
+    animation: FadeIn 2.5s ease-in-out forwards;
+}
+
+#work-experience:hover {
+  transform: scale(1.05);
+  filter: brightness(120%);
+}
+
+
+@keyframes FadeIn {
+  0%   { opacity: 0%; }
+  100% { opacity: 100%; }
+    
+    
+}
+    
+  
+
+#education{
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    padding: 2rem 1rem;
+    border-width: 100%;
+    border-style: dotted;
+    background-color: rgba(44, 35, 175, 0.567);
+    color: #e1e3e5;
+    animation: FadeIn 2.5s ease-in-out forwards;
+}
+
+#education:hover {
+  transform: scale(1.05);
+  filter: brightness(120%);
+}
+
+@keyframes FadeIn {
+  0%   { opacity: 0%; }
+  100% { opacity: 100%; }
+    
+    
+}
+    
+  
+
+#skills {
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  background-color: rgb(151, 21, 198);
+    color: aliceblue;
+    border-width: 100%;
+    border-style: dotted;
+    padding: 2rem 1rem;
+    
+    animation: FadeIn 2.5s ease-in-out forwards;
+}
+
+#skills:hover {
+  transform: scale(1.05);
+  filter: brightness(120%);
+}
+
+
+@keyframes FadeIn {
+  0%   { opacity: 0%; }
+  100% { opacity: 100%; }
+    
+    
+}
+
+
 #contact {
-  padding: 2rem 1rem;
+  
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    background-color: rgb(3, 189, 139);
+    
+    
+  padding: 2rem 1rem;animation: FadeIn 2.5s ease-in-out forwards;
+}
+#contact:hover {
+  transform: scale(1.05);
+  filter: brightness(120%);
+}
+
+#contact:hover {
+  transform: scale(1.05);
+  filter: brightness(120%);
+  shape-outside: margin-box;
+  background-color: rgba(111, 161, 111, 0.7);
+}
+
+
+@keyframes FadeIn {
+  0%   { opacity: 0%; }
+  100% { opacity: 100%; }
+    
+    
+
+  
+  
 }
 
 #work-experience li,
 #education li,
 #skills li {
   margin-bottom: 1rem;
+  
 }
 
 #work-experience h3,
 #education h3 {
   margin-bottom: 0.5rem;
+  
 }
 
 .sub-details {
   font-size: 0.8rem;
   color: #666;
+  
 }
 
 .duration {
   margin-right: 1rem;
+  
 }
 
 .location::before {
@@ -84,18 +333,243 @@ a {
   margin-right: 0.5rem;
 }
 
-/* For screens smaller than or equal to 768px */
-@media (max-width: 768px) {
-    /* Set main element to column direction and center items */
-    main {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+/* Media queries for responsive typography */
+@media screen and (max-width: 767px) {
+    body {
+      font-size: 16px; /* Adjust as needed */
     }
+  }
+  /*
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    body {
+
+    }
+  }
+      font-size: 18px; /* Adjust as needed */
   
-    /* Set section element to full width */
-    section {
-      width: 100%;
+  
+  /*
+  
+  @media screen and (min-width: 1024px) {
+    body {
+      font-size: 20px; /* Adjust as needed 
     }
+  }
+*/
+  @media only screen and (max-device-width: 428px) {
+    /* CSS rules specific to iPhone 12 Pro Max */
+  }
+  
+#fade-container {
+    opacity: 50%;
+}
+#fade-container {
+    transition: opacity 5s ease-in-out;
+    
+}
+
+.popup {
+  
+  align-items: center;
+  display: none;
+  position:grid;
+  top: 0;
+  left: 0;
+  width: 80%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  z-index: 999;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+
+
+
+.popup p {
+  color: white;
   
 }
+
+.close-button {
+  background-color: white;
+  color: black;
+  border: none;
+  padding: 5px 10px;
+  margin-top: 10px;
+}
+
+.icon-button {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+}
+
+.icon-button img {
+  width: 100%;
+  height: auto;
+
+
+  
+}
+
+
+#skills .toggle-details {
+  cursor: pointer;
+  font-size: 1.5em;
+  margin-left: 10px;
+  color: blue;
+}
+
+#night-mode-switch {
+  box-shadow: rgba(255, 255, 255, 0.511) 0px 22px 70px 4px;
+  background-color: rgb(251, 251, 251);
+  color: black;
+  border: none;
+  padding: 10px 11px;
+  margin-bottom: -5%;
+  margin-right: 0%;
+  border-radius: 30px;
+}
+#night-mode-switch:hover {
+  transform: scale(1.05);
+  filter: contrast(120%);
+}
+
+#night-mode-switch.clicked {
+  background-color: black;
+  color: lightgray;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 12px;
+  padding-left: 12px;
+}
+
+#night-mode-switch.clicked:hover {
+  transform: scale(1.05);
+  filter: brightness(120%);
+}
+
+
+#to-top-btn {
+  box-shadow: rgba(255, 255, 255, 0.511) 0px 22px 70px 4px;
+  background-color: rgb(251, 251, 251);
+  color: black;
+  border: none;
+  padding: 10px 11px;
+  margin-bottom: -5%;
+  margin-right: 0%;
+  border-radius: 30px;
+}
+
+#to-top-btn:hover {
+  background-color: #00d011;
+}
+
+.pulse {
+  margin-bottom: 3%;
+  animation: pulse-animation 1s infinite;
+}
+
+@keyframes pulse-animation {
+  0% {
+    transform: scale(5);
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.185);
+  }
+  
+  70% {
+      transform: scale(1);
+      box-shadow: 0 0 0 10px rgba(255, 99, 71, 0);
+  }
+  
+  100% {
+      transform: scale(1.2);
+      box-shadow: 0 0 0 0 rgba(255, 99, 71, 0);
+  }
+}
+
+
+/* Style the slider container */
+.slider-container {
+  width: 80%;
+  height: 60%;
+  display: grid;
+}
+
+/* Style the slider slides main source to centralize the images inside op popup  */
+.swiper-slide .img-container {
+  position: relative;
+  padding-top: 20%;
+  margin-left: 50%;
+  width: 50%;
+  height: 100%;
+  margin-right: 50%;
+  box-shadow: rgba(235, 228, 228, 0.517) 0px 22px 70px 4px;
+}
+
+.swiper-slide img {
+  height: 50%;
+  width: 50%;
+  object-fit: contain;
+  direction: horizontal !important;
+  
+}
+
+.details {
+  position: group;
+  bottom: 0%;
+  left: 0;
+  right: 0;
+  height: 0%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent);
+  color: #fff;
+  padding: 0px;
+  box-sizing: border-box;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
+
+
+
+.img-container:hover .details {
+  opacity: 1;
+  
+}
+
+.bio {
+  font-size: 20px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.link {
+  font-size: 16px;
+  color: #e50914;
+  text-decoration: none;
+}
+
+#scroll-to-top{
+  border-radius: 15%;
+  background-color: #b5cc068e;
+  
+}
+
+
+#scroll-to-top:hover {
+  transform: scale(1.05);
+  filter: brightness(120%);
+  shape-outside: margin-box;
+  background-color: rgb(56, 226, 5);
+}
+
+
