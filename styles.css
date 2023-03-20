@@ -45,6 +45,7 @@ body {
   }
   
   section {
+    
     outline-style: groove;
     border-style: double;
     margin-left: 10%;
@@ -123,7 +124,7 @@ a {
     align-content: center;
     /* adjust as needed */
     height: 150%;
-    margin-right: 20px;
+    
     
     border-radius: 100%;
     
@@ -431,7 +432,7 @@ a {
 #night-mode-switch {
   box-shadow: rgba(255, 255, 255, 0.511) 0px 22px 70px 4px;
   background-color: rgb(251, 251, 251);
-  color: black;
+  color: rgb(45, 49, 156);
   border: none;
   padding: 10px 11px;
   margin-bottom: -5%;
@@ -444,7 +445,7 @@ a {
 }
 
 #night-mode-switch.clicked {
-  background-color: black;
+  background-color: rgba(32, 39, 115, 0.9);
   color: lightgray;
   padding-top: 10px;
   padding-right: 10px;
@@ -457,20 +458,19 @@ a {
   filter: brightness(120%);
 }
 
+/*img button arrow to the top */
 
-#to-top-btn {
-  box-shadow: rgba(255, 255, 255, 0.511) 0px 22px 70px 4px;
-  background-color: rgb(251, 251, 251);
-  color: black;
+#scroll-to-top {
+  background-color: #e50914;
   border: none;
-  padding: 10px 11px;
-  margin-bottom: -5%;
-  margin-right: 0%;
-  border-radius: 30px;
+  outline: none;
+  cursor: pointer;
 }
 
-#to-top-btn:hover {
-  background-color: #00d011;
+#scroll-to-top img {
+  
+  width: 100px;
+  height: 100px;
 }
 
 .pulse {
@@ -564,16 +564,33 @@ a {
 
 #scroll-to-top{
   border-radius: 15%;
-  background-color: #b5cc068e;
+  background-color: #e4e5de00;
   
 }
 
 
 #scroll-to-top:hover {
-  transform: scale(1.05);
-  filter: brightness(120%);
-  shape-outside: margin-box;
-  background-color: rgb(56, 226, 5);
+ 
+  shape-outside:polygon(5);
+  background-color: rgba(191, 194, 190, 0.451);
+  margin-bottom: 3%;
+  animation: pulse-animation 1s infinite;
 }
 
+@keyframes pulse-animation {
+  10% {
+    transform: scale(0.5);
+    box-shadow: 0 0 0 0 rgba(229, 228, 228, 0);
+  }
+  
+  50% {
+      transform: scale(0.7);
+      box-shadow: 0 0 0 10px rgba(255, 99, 71, 0);
+  }
+  
+  90% {
+      transform: scale(1);
+      box-shadow: 0 0 0 0 rgba(255, 99, 71, 0);
+  }
+}
 
