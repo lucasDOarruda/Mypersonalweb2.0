@@ -288,12 +288,13 @@ a {
 #contact {
   
   box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
-    background-color: rgb(3, 189, 139);
+    background-color: rgba(33, 1, 13, 0.729);
     
     border-radius: 0% 15% 0% 15%;
   padding: 2rem 1rem;animation: FadeIn 2.5s ease-in-out forwards;
 }
 #contact:hover {
+  box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
   transform: scale(1.05);
   filter: brightness(120%);
 }
@@ -302,7 +303,7 @@ a {
   transform: scale(1.05);
   filter: brightness(120%);
   shape-outside: margin-box;
-  background-color: rgba(111, 161, 111, 0.7);
+  background-color: rgba(243, 12, 8, 0.271);
 }
 
 
