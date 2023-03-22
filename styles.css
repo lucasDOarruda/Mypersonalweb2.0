@@ -28,7 +28,7 @@ button{
  
 .night-mode {
     border-style: ridge;
-    background-color: rgb(7, 7, 7);
+    background-color: rgba(5, 15, 90, 0.873);
     color: #1d1b1ba6;
     /* add any additional styles for night mode here */
    
@@ -252,10 +252,11 @@ a {
 #skills {
   box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
   background-color: rgb(151, 21, 198);
-    color: aliceblue;
-    border-width: 100%;
+    color: aliceblue;;
     border-style: dotted;
     padding: 2rem 1rem;
+   
+    
     
     animation: FadeIn 2.5s ease-in-out forwards;
 }
@@ -272,6 +273,10 @@ a {
     
     
 }
+
+
+
+
 
 
 #contact {
@@ -572,7 +577,7 @@ a {
 #scroll-to-top:hover {
  
   shape-outside:polygon(5);
-  background-color: rgba(191, 194, 190, 0.451);
+  background-color: rgba(191, 194, 190, 0);
   margin-bottom: 3%;
   animation: pulse-animation 1s infinite;
 }
