@@ -126,6 +126,7 @@ a {
     height: 150%;
     
     
+    
     border-radius: 100%;
     
     
@@ -199,12 +200,16 @@ a {
         width: 100%;
     }
 }
+
+/*background*/
+
 #work-experience  {
   box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
     color: black;
     background-color: rgb(251, 255, 8);
     border-width: 100%;
     border-style: dotted;
+    border-radius: 15% 0% 15% 0%;
     
     padding: 2rem 1rem;
     animation: FadeIn 2.5s ease-in-out forwards;
@@ -228,10 +233,11 @@ a {
 #education{
   box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
     padding: 2rem 1rem;
-    border-width: 100%;
+    
     border-style: dotted;
     background-color: rgba(44, 35, 175, 0.567);
     color: #e1e3e5;
+    border-radius: 0% 15% 0% 15%;
     animation: FadeIn 2.5s ease-in-out forwards;
 }
 
@@ -255,6 +261,7 @@ a {
     color: aliceblue;;
     border-style: dotted;
     padding: 2rem 1rem;
+    border-radius: 15% 0% 15% 0%;
    
     
     
@@ -284,7 +291,7 @@ a {
   box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
     background-color: rgb(3, 189, 139);
     
-    
+    border-radius: 0% 15% 0% 15%;
   padding: 2rem 1rem;animation: FadeIn 2.5s ease-in-out forwards;
 }
 #contact:hover {
