@@ -226,12 +226,12 @@ a {
     
     
 }
-    
-  
+
+
 
 #education{
   box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
-    padding: 2rem 1rem;
+    padding: 1rem 1rem;
     
     border-style: dotted;
     background-color: rgba(44, 35, 175, 0.567);
@@ -288,7 +288,7 @@ a {
 #contact {
   
   box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
-    background-color: rgba(33, 1, 13, 0.729);
+    background-color: rgba(254, 77, 142, 0.729);
     
     border-radius: 0% 15% 0% 15%;
   padding: 2rem 1rem;animation: FadeIn 2.5s ease-in-out forwards;
