@@ -228,10 +228,14 @@ a {
 }
 
 
-.img-container{
+#education.img-container{
 
-align-content: space-evenly;
+  justify-content: center;
+
 }
+
+
+
 
 
 #education{
