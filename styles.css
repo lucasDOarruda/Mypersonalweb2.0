@@ -228,6 +228,11 @@ a {
 }
 
 
+.img-container{
+
+align-content: space-evenly;
+}
+
 
 #education{
   box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
@@ -236,6 +241,7 @@ a {
     border-style: dotted;
     background-color: rgba(44, 35, 175, 0.567);
     color: #e1e3e5;
+   
     border-radius: 0% 15% 0% 15%;
     animation: FadeIn 2.5s ease-in-out forwards;
 }
