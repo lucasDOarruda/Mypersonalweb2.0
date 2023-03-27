@@ -46,6 +46,9 @@ scrollToTopBtn.addEventListener('click', () => {
 
 
 
-
-
-
+const container = document.getElementById("dots-container");
+for (let i = 0; i < 1000; i++) {
+  const dot = document.createElement("div");
+  dot.classList.add("dot");
+  container.appendChild(dot);
+}
