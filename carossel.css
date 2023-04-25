@@ -30,7 +30,9 @@ body {
 }
 
 * {
+  border-style: dotted white;
   box-sizing: border-box;
+  
 }
 
 *::-webkit-scrollbar {
@@ -55,7 +57,7 @@ ol, li {
 .carousel {
   position: relative;
   padding-top: 75%;
-  filter: drop-shadow(0 0 10px #0003);
+  filter: drop-shadow(0 0 10px rgb(0, 0, 0));
   perspective: 100px;
 }
 
@@ -85,7 +87,7 @@ ol, li {
 }
 
 .carousel__slide::after {
-  content: counter(item);
+  
   display: block;
   position: absolute;
   top: 50%;
