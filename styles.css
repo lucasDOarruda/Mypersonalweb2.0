@@ -96,6 +96,7 @@ a {
   color: rgb(255, 255, 255);
   border-width: 100%;
   border-style: dotted;
+  filter: drop-shadow(0 0 10px rgb(0, 0, 0));
 
   
   animation: FadeIn 3s ease-in-out forwards;
@@ -209,9 +210,10 @@ a {
     border-width: 100%;
     border-style: dotted;
     border-radius: 15% 0% 15% 0%;
-    
+    filter: drop-shadow(0 0 10px rgb(0, 0, 0));
     padding: 2rem 1rem;
     animation: FadeIn 2.5s ease-in-out forwards;
+
 }
 
 #work-experience:hover {
@@ -271,7 +273,7 @@ a {
     border-style: dotted;
     padding: 2rem 1rem;
     border-radius: 15% 0% 15% 0%;
-   
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.668));
     
     
     animation: FadeIn 2.5s ease-in-out forwards;
@@ -615,7 +617,6 @@ a {
       box-shadow: 0 0 0 0 rgba(255, 99, 71, 0);
   }
 }
-
 
 
 

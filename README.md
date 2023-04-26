@@ -22,3 +22,4 @@ Hey there! I'm a Front-End Development grad with a twist - I have a background i
 [![](https://visitcount.itsvg.in/api?id=Lucas DO arruda&icon=0&color=0)](https://visitcount.itsvg.in)
 
 <!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
+# x
